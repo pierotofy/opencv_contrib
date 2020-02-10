@@ -43,8 +43,6 @@
 #ifndef __OPENCV_PRECOMP_H__
 #define __OPENCV_PRECOMP_H__
 
-#include "opencv2/xfeatures2d/cuda.hpp"
-
 #include "opencv2/xfeatures2d.hpp"
 #include "opencv2/imgproc.hpp"
 
