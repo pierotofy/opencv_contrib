@@ -112,8 +112,6 @@ namespace cv
 namespace xfeatures2d
 {
 
-#ifdef OPENCV_ENABLE_NONFREE
-
 /*!
  SIFT implementation.
 
@@ -1199,14 +1197,6 @@ void SIFT_Impl::detectAndCompute(InputArray _image, InputArray _mask,
     }
 }
 
-#else // ! #ifdef OPENCV_ENABLE_NONFREE
-Ptr<SIFT> SIFT::create( int, int, double, double, double )
-{
-    CV_Error(Error::StsNotImplemented,
-        "This algorithm is patented and is excluded in this configuration; "
-        "Set OPENCV_ENABLE_NONFREE CMake option and rebuild the library");
-}
-#endif
 
 }
 }
